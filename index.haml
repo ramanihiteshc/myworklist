@@ -1,0 +1,324 @@
+!!!5
+%html{lang: "es"}
+	%head
+		%meta{name:"viewport", content:"width=device-width, initial-scale=1"}
+		%meta{charset:"UTF-8"}
+		%meta{content:"Roberto Gervacio, ITC, Ingeniería Tecnologías Cómputo", name: "keywords"}
+		%meta{content:"Futuro Ingeniero en Tecnologías de Cómputo", name: "description"}
+		%meta{content:"Roberto Gervacio", name:"author"}
+		%meta{content:"Roberto Gervacio", name:"owner"}
+		%meta{content:"index/follow", name:"robots"}
+		%meta{name:"theme-color", content:"#2E5EC6"}
+		-#%link{rel:"shortcut icon", type:"image/x-icon", href:"images/favicon.ico"}/
+		%link{rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css", media: "screen,projection"}/
+		%link{:rel => "stylesheet", :href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"}/
+		%link{rel:"stylesheet", href:"css/styles.css"}/
+		%title Roberto Gervacio
+	%body
+		#home.block
+			.index-first
+				#particles
+				%nav
+					.nav-wrapper.container
+						%ul.left
+							%li
+								%a.icon-size-nav{:href => "https://github.com/robtry", :target => "_blank"} <i class="fa fa-github"></i>
+							%li
+								%a.brand-logo.to-home{:href => "#home"} Roberto
+						%ul.right.hide-on-med-and-down#nav-mobile-1
+							%li
+								%a.to-skills{:href => "#skills"} Skills
+							%li
+								%a.to-projects{:href => "#projects"} Experience
+							%li
+								%a.to-contact{:href => "#contact"} Contact
+				%h1#intro-title Roberto
+				%p#intro-paragraph.flow-text Hello! I am Roberto Gervacio, a future<i> Science in Computer Engineer</i>. I have experience on FullStack development, Native Applications and Web. You can see some of <a class="to-projects" href = "#projects">my experience <i class="fa fa-arrow-right"></i></a>
+				#intro-image
+					%img{:src => "images/avatar.png", :alt => ""}/
+		#skills
+			%h3.center <i class="fa fa-puzzle-piece"></i> Skills
+			%br/
+			%br/
+			.container
+				.row.center
+					.col.s12.m4.hoverable
+						%i.fa.fa-git-square
+						%h5.truncate Git
+						%p Use of Git and <a href = "https://github.com/robtry" target = "_blank"> GitHub </a> to work <b> in teams </b> and have a control about each project.
+					.col.s12.m4.hoverable
+						%i.fa.fa-code
+						%h5.truncate Clean Code
+						%p Each project is coded using <b> pattern designs </b> for each lenguage.
+					.col.s12.m4.hoverable
+						%i.fa.fa-laptop
+						%h5.truncate Always responsive
+						%p Web design is responsive, it means, <b> evolves </b> to any device.
+				.row.center
+					.col.s12.m4.hoverable
+						%i.fa.fa-paint-brush
+						%h5.truncate Harmonic Design
+						%p Each project is <b> unique </b> and adapted to the needs and requirements.
+					.col.s12.m4.hoverable
+						%i.fa.fa-server
+						%h5.truncate Universality
+						%p Development and knowledge for each <b> operating system </b> <i class="fa fa-apple"></i> <i class="fa fa-android"></i> <i class="fa fa-linux"></i> <i class="fa fa-windows"></i>
+					.col.s12.m4.hoverable
+						%i.fa.fa-database
+						%h5.truncate Data Bases
+						%p <b> Management </b> for SQL and NoSQL Data Bases.
+		#projects
+			%h3.center <i class="fa fa-folder-open"></i> Experience & Projects
+			%br/
+			%br/
+			.container
+				.row.center
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Emotionfy
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/emotionfy.svg"}
+									.mc-description
+										%span Language: <b> Javascript </b> </br> Framework: <b> React </b> </br> Detection of emotions in video (frontend).
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/emotionfy", :target =>"_blank"} See more
+									%p 06/20
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate REA
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/rea.png"}
+									.mc-description
+										%span Language: <b> Javascript </b> </br> Framework: <b> React Native </b> </br> (Applicaction) Manage users, invetory, providers and orders, similar to delivery app.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://apps.apple.com/us/app/id1523781378", :target =>"_blank"} See iOS
+									%p 06/20
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate DIF
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/dif.jpeg"}
+									.mc-description
+										%span Language: <b> Javascript </b> </br> <b> MERN </b> </br> Handling of users, forms and children
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a Private
+									%p 06/20
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate DOE VirtualLab
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/doe.png"}
+									.mc-description
+										%span Language: <b> Javascript </b> </br> See data from experiments, given specific measures.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://doevirtuallab.herokuapp.com/", :target =>"_blank"} See more
+									%p 07/20
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate GliphyHub
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/gh.png"}
+									.mc-description
+										%span Language: <b> Ruby on Rails </b> </br> Platform for communication between students and teachers.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/gliphyhub", :target =>"_blank"} See more
+									%p 06/17
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate GliphyPost
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/ghp.jpg"}
+									.mc-description
+										%span Language: <b> C# (Visual Studio) </b></br>Material design prototype to schedule posts on Facebook.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/gliphypost", :target =>"_blank"} See more
+									%p 11/18
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Veri
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/database.png"}
+									.mc-description
+										%span Language: <b> Python, RoR, Nodejs, MongoDB </b> </br> Implementing two databases motor to work together and web scraping data processing.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a Private
+									%p 11/19
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Judge Maze
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/coding.png"}
+									.mc-description
+										%span Language: <b> Ruby on Rails </b> </br> Judge that execute and evaluate a specific code to solve a maze and animate the answer.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a Private
+									%p 09/18
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Subnetting
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/subnetting.png"}
+									.mc-description
+										%span Language: <b> C </b></br>Calculating routing table given ip and subnet bits.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/subnetting", :target =>"_blank"} See more
+									%p 10/19
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Solving problems
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/algorithm.png"}
+									.mc-description
+										%span Language: <b> Java y C/C++ </b> </br> Training for competitive programming.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/problems", :target =>"_blank"} See more
+									%p 09/18
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Maze Generator
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/maze.png"}
+									.mc-description
+										%span Language: <b> Javascript </b> </br> Boolean maze generator.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/maze-generator", :target =>"_blank"} See more
+									%p 08/18
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate In My Pocket
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/inmypocket.png"}
+									.mc-description
+										%span Language: <b> Visual Basic .NET</b></br>A material design prototype to manage the financial records.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/inmypocket", :target =>"_blank"} See more
+									%p 11/16
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate W2B
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/w2b.png"}
+									.mc-description
+										%span Language: <b> Ruby on Rails </b></br> A helpful web application to organize the inventory in cooperatives events.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/w2b", :target =>"_blank"} See more
+									%p 01/17
+					.col.s12.m6.l4
+						.team
+							%article.material-card
+								%h2.azul
+									%strong.truncate.mc-title
+										%span.truncate Dron Camera
+								.mc-content
+									.img-container
+										%img.responsive-img.white{src:"images/droncamera.png"}
+									.mc-description
+										%span Language: <b> Objective C </b></br> Application for iOS that allows to controll the camera of DJI Drone.
+								%a.mc-btn-action.azul.z-depth-3.hoverable
+									%i.fa.fa-bars
+								.mc-footer.azul
+									%a{:href => "https://github.com/robtry/droncamera", :target =>"_blank"} See more
+									%p 31/17
+		-# .parallax-container
+		-# 	.row.valing-wrapper.center
+		-# 		.col.s12
+		-# 			%h1 hola mundo
+		-# 		.parallax
+		-# 			%img{src:"images/desk.jpeg"}
+		#contact
+			%h3.center  <i class = "fa fa-whatsapp"></i> Contact
+			.row.contact
+				.col.m4.s12.offset-m4
+					.row
+						.col.s3
+							%a{:href => "https://github.com/robtry", :target =>"_blank"} <i class="fa fa-github"> </i>
+						.col.s3
+							%a.tooltipped{:href => "mailto:guendulayrob@gmail.com?Subject=Hello", :target => "_top",:data=>{:position=>"top",:delay=>"50",:tooltip=>"guendulayrob@gmail.com"}} <i class="fa fa-envelope"> </i>
+						.col.s3
+							%a{:href => "https://www.linkedin.com/in/roberto-gervacio-46bb40132/", :target =>"_blank"} <i class="fa fa-linkedin"> </i>
+						-#.col.s3
+							%a{:href => "https://www.instagram.com/robtry_/", :target =>"_blank"} <i class="fa fa-instagram"> </i>
+
+	%script{type:"text/javascript", src:"https://code.jquery.com/jquery-3.2.1.min.js"}
+	%script{type:"text/javascript", src:"https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"}
+	%script{type:"text/javascript", src:"js/main.js"}
+	%script{type:"text/javascript", src:"js/particlesground.js"}
+	%script{type:"text/javascript",src:"js/particles.js"}
